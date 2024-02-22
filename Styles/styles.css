@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Modal design */
+
+.show {
+  display: block !important;
+  opacity: 1 !important;
+}
+.registerUser-modal {
+  width: 72px;
+  height: 40px;
+  border: none;
+  background-color: red;
+  border-radius: 50px;
+}
+.modal {
+  width: 500px;
+  height: 650px;
+  display: none;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  max-width: 600px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.modal h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: rgb(51, 51, 51);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  padding: 0px 16px;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+}
+.modal img {
+  width: 39px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal label input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+
+.modal button {
+  border: none;
+  text-align: center;
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+
+.modal button:hover {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+.modal button:active {
+  background-color: #003a6d;
+}
+
+.modal button:last-child {
+  margin-right: 0;
+}
+
+.modal input {
+  background-color: white;
+  margin-top: 8px;
+  width: 268px;
+  height: 48px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: none;
+}
+.registerButtonWrapper {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 15px;
+  width: 232px;
+  height: 40px;
+  text-align: center;
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+
+/* Message Box design*/
+.messageBox {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 10px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.messageBox.show {
+  display: block;
+  opacity: 1;
+}
+
+#user-nav {
+  color: white;
+}
+
+.block {
+  display: block;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 img {
+  width: 130px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  padding-right: 30px;
+}
+.registerUser-modal {
+  width: 72px;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: red;
+  border-radius: 50px;
+}
+.loginUser-modal {
+  width: 125px;
+  height: 40px;
+  border: none;
+  background-color: #e9e9e9;
+  color: black;
+  border-radius: 50px;
+}
+.search {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid aqua;
+  font-size: 25px;
+  display: none;
+}
+.search::placeholder {
+  color: aqua;
+  font-size: 30px;
+  text-align: center;
+}
+
+.login-modal {
+  display: none;
+}
+#user-nav {
+  color: #ccc;
+  /*  products  */
+}
+#products {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 20px;
+}
+#products div {
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+
+  border-radius: 5px;
+}
+#products > div {
+  border: 1px solid rgb(226, 220, 220);
+}
+#products > div > button {
+  font-size: 15px;
+  color: #ccc;
+  border: none;
+  width: 70px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#products img {
+  object-fit: contain;
+}
+.deleteBtn {
+  margin: 10px;
+  background-color: #eb2f0e;
+}
+.editBtn {
+  background-color: #007bff;
+  margin: 10px;
+}
+
+/*! PASSWORD SHOW/HISE */
+.password-container {
+  position: relative;
+}
+
+.password-control {
+  position: absolute;
+  top: 60%;
+  right: 15px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+
+.pagination {
+  margin: auto;
+  text-align: center;
+  display: none;
+}
